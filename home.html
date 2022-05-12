@@ -1,0 +1,267 @@
+<html>
+<head>
+<title></title>
+<link href="styls/cssfil.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="styls/hcc.css" media="screen" />
+
+<style type="text/css">
+#conr{
+width:100%;
+height:800;
+background-color:#fff;
+}
+
+#top{
+width:100%px;
+height:80;
+background-color:silver;
+}
+#text{
+width:15%;
+height:70;
+}
+#menutop{
+background-color:#555;
+width:100%px;
+height:50px;
+}
+#col_l{
+background-color:#ccc;
+width:200px;
+height:600px;
+float:left;
+
+}
+#col_r{
+background-color:#ccc;
+width:300px;
+height:600px;
+float:right;
+
+}
+#body{
+background-color:silver;
+height:600px;
+marign-left:220px;
+}
+#footer{
+background-color:#555;
+width:100%px;
+height:120px;
+float:bottom;
+}
+td{
+color:#111;
+font-size:=10;}
+h1{
+color:silver;}
+#top h1{
+line-height: 10.4em;
+text-transform: uppercase;
+letter-spacing: 0.2em;
+font-weight: bold;
+word-spacing: 1em;}
+</style>
+
+<script>
+function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname+"="+cvalue+"; "+expires;
+}
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i].trim();
+        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+    }
+    return "";
+}
+function checkCookie() {
+    var user=getCookie("username");
+    if (user != "") {
+        alert("Welcome again " + user);
+    } else {
+       user = prompt("Please enter your name:","");
+       if (user != "" && user != null) {
+           setCookie("username", user, 30);
+       }
+    }
+}
+</script>
+</head>
+<body onload="checkCookie();">
+<div id="conr">
+<div id="top">
+  <font family="georgia" face="san-serif" size=10 color="grey">
+<h5 style="padding-left:160;word-spacing:5;"><I><strong> B5A.net CAR SHOPPING</strong></I></h5>
+  </font>
+ </div>
+<div id="menutop" style="padding-left:150px";>
+  <ul id="nav" class="drop">
+  <li><a href="home.html">HOME</a></li>
+  <li><a href="#">NEW CAR</a>
+    <ul>
+      <li><a href="newBus_1.html">RENTING</a></li>
+      <li><a href="car.html">SELLING</a></li>
+      </ul>
+  </li>
+  <li><a href="#"> USED CAR</a>
+    <ul>
+      <li><a href="rent.html">RENTING</a></li>
+      <li><a href="sell.html">SELLING</a></li>
+    </ul>
+  </li> 
+  <li> <a href="#">CONTACT US</a>
+	     <ul>
+         <li><a href="#">Facebook</a></li>
+         <li><a href="mailto:birhanu123e@gmail.com">email</a></li>
+         <li><a href="#">fax</a>
+		 <ul>
+		  <li><a href="#">+251911458101</a></li>
+		   <li><a href="#">+25191131758101</a></li>
+		    <li><a href="#">+251911317580</a></li>
+			 <li><a href="#">+251911758101</a></li>
+		 </ul>
+		 </li>
+         <li><a href="#">yahoo</a></li>
+		 <li><a href="#">phone</a>
+		 <ul>
+		 <li><a href="#">+251931758101</a></li>
+         <li><a href="#">+251931836205</a></li>
+         <li><a href="#">+251931792070</a></li>
+         <li><a href="#">+251913456363</a></li>
+		 </ul></li>
+         </ul>
+	</li>
+   <li><a href="bakg.html">BACKGROUND INFO</a></li>
+</ul>
+</div>
+<div id="col_l" >
+<fieldset style="padding-top:100px">
+<ul id="nav" class="drop"style="margin-left:0px; padding-top:50px;width:110px;">
+<li><a href="home.html">HOME</a></li><br>
+<li><a href="formvalidation.html">REGSTER</a></li><br>
+<li><a href="serv.html">ADVERTISE</a> </li><br>
+<li><a href="about.html">ABOUT US</a></li></ul></fieldset>
+<fieldset >
+<p ><b>Do you want the current URL </b></p>
+<button onclick="url()">C_here</button>
+<p id="demo"></p>
+<script>
+function url() {
+    document.getElementById("demo").innerHTML =
+    window.location.href;
+}
+</script>
+</fieldset>
+</div>
+<div id="col_r">
+<br>
+<a href="#"><img src="images/facebook.png" width="50px" height="50px"/></a>
+<a href="#"><img src="images/skype.png" width="50px" height="50px"/></a>
+<a href="#"><img src="images/twitter.png" width="50px" height="50px"/></a>
+<a href="#"><img src="images/YO.PNG" width="50px" height="50px"/></a>
+<form id="signup">
+<fieldset style="width:35px">
+
+<legend>Do have an account </legend>
+<ul>		
+				<li>
+					
+<form action="submit.htm" onsubmit="return validate_form(this);" method="post">
+                               <label for="text">Email:</label> <input type="text"id="email" name="email" size="10">
+<p class="validation01">
+						<span class="invalid">Please enter a valid email address 
+						</span>
+						<span class="valid">Thank you for entering a valid email</span>
+					</p>
+
+				</li>
+				<li>
+					<label for="password">Password *</label>
+					<input id="password" name="password" type="password" title="Minimum 8 characters, one number, one uppercase and one lowercase letter" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"size="10" maxlength="10" required /> 
+					<p class="validation01">
+						<span class="invalid">Minimum 8 characters, one number, one uppercase letter and one lowercase letter</span>
+						<span class="valid">Your password meets our requirements, thank you.</span>
+					</p>
+				</li>
+			</ul><p>
+<input type="submit" value="login" />
+  <input type="reset" value="Cancel" /></p>
+ 
+   	</fieldset>	</form>
+   <form <form id="signup">
+	<fieldset style="width:150px">
+<legend>Are you still not a membership </legend>
+			<a href="rform.html">Creat an acount</a>
+			</fieldset>
+</form>
+</div>
+<div id="body" >
+<script language="JavaScript">              
+var i = 0; 
+var path = new Array(); 
+// LIST OF IMAGES 
+path[0] = "images/-9.jpg";
+path[1] = "images/-6.jpg"; 
+path[2] = "images/-y.jpg"; 
+path[3] = "images/3.jpg"; 
+path[3] = "images/4.jpg"; 
+path[4] = "images/6.jpg"; 
+path[5] = "images/7.jpg"; 
+path[6] = "images/8.jpg"; 
+path[7] = "images/10.jpg"; 
+path[8] = "images/you2.jpg"; 
+path[9] = "images/12.jpg"; 
+path[10] = "images/13.jpg"; 
+path[11] = "images/14.jpg"; 
+path[12] = "images/55.jpg"; 
+path[13] = "images/vc.jpg"; 
+path[14] = "images/a_a.jpg";
+path[14] = "images/vvv.jpg";
+function swapImage() 
+{ 
+document.slide.src = path[i]; 
+if(i < path.length - 1) i++; 
+else i = 0; 
+setTimeout("swapImage()",3000); 
+} 
+window.onload=swapImage; 
+   </script> 
+  <img height="300" name="slide" alt="new cars" titile style="width:470;height:300;padding-left:150"/>
+
+
+
+<p style="text-transform:uppercase;word-spacing:2;text-align:center;"><I><strong>SERVICES WE PROVID RENTING AND SELLING</I></strong></p>
+
+
+<p style=" color:#111"><strong>
+Selling a car is never much fun. Do so privately and you'll be lucky not to have to deal with
+at least one time-waster.
+<br>
+we have so many Bus and Cars to sell
+Selling a car is never much fun.
+ Do so privately and you'll be lucky not to have
+ to deal with at least one time-waster. Go via a 
+ dealer and you'll struggle to make what you might
+ through a private sale. Therefore it's no surprise 
+ that online services are becoming increasingly popular.
+ The online option is broadly split into two camps.
+ The first are companies (such as the high-profile 
+ Webuyanycar.com) that offer an instant valuation
+ over the internet and then have collection points
+ for cars.</strong>
+</p>
+</div>
+<div id="footer" style="padding-left:150px">
+<ul id="nav" class="drop"><li><a href="home.html">HOME</a></li>
+<li><a href="formvalidation.html">REGSTER</a></li>
+<li><a href="serv.html">ADVERTISE</a> </li>
+<li><a href="about.html">ABOUT US</a></li></ul>
+</div>
+</div>
+</body>
+</html>

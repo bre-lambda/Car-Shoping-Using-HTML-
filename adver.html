@@ -1,0 +1,219 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="styls/cssfil.css" type="text/css" rel="stylesheet"/>
+<style>
+ul.svertical{
+width: 200px; /* width of menu */
+overflow: auto;
+background: black; /* background of menu */
+margin: 0;
+padding: 0;
+padding-top: 7px; /* top padding */
+list-style-type: none;
+}
+ul.svertical li{
+text-align: right; /* right align menu links */
+}
+ul.svertical li a{
+position: relative;
+display: inline-block;
+text-indent: 5px;
+overflow: hidden;
+background: rgb(127, 201, 68); /* initial background color of links */
+font: bold 16px Germand;
+text-decoration: none;
+padding: 5px;
+margin-bottom: 7px; /* spacing between links */
+color: black;
+-moz-box-shadow: inset -7px 0 5px rgba(114,114,114, 0.8); /* inner right shadow added to each link */
+-webkit-box-shadow: inset -7px 0 5px rgba(114,114,114, 0.8);
+box-shadow: inset -7px 0 5px rgba(114,114,114, 0.8);
+-moz-transition: all 0.2s ease-in-out; /* CSS3 transition of hover properties */
+-webkit-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+ul.svertical li a:hover{
+padding-right: 30px; /* add right padding to expand link horizontally to the left */
+color: black;
+background: rgb(153,249,75);
+-moz-box-shadow: inset -3px 0 2px rgba(114,114,114, 0.8); /* contract inner right shadow */
+-webkit-box-shadow: inset -3px 0 5px rgba(114,114,114, 0.8);
+box-shadow: inset -3px 0 5px rgba(114,114,114, 0.8);
+}
+ul.svertical li a:before{ /* CSS generated content: slanted right edge */
+content: "";
+position: absolute;
+left: 0;
+top: 0;
+border-style: solid; 
+border-width: 70px 0 0 20px; /* Play around with 1st and 4th value to change slant degree */
+border-color: transparent transparent transparent black; /* change black to match the background color of the menu UL */
+
+}
+#conr{
+width:100%;
+height:1600;
+background-color:#fff;
+}
+#left{
+width:200px;
+height:180px;
+float:left;
+background-color:#555;
+}
+#right{
+width:200px;
+height:180px;
+background-color:#555;
+float:right;
+}
+#top{
+width:100%px;
+height:180;
+background-image:url(images_100.jpg);
+}
+#menutop{
+background-color:#555;
+width:100%px;
+height:50px;
+}
+#col_l{
+background-color:#3F2AaF;
+width:100px;
+height:1620px;
+float:left;
+background-image:url(images_100.jpg);
+}
+#col_r{
+background-color:#aac;
+width:100px;
+height:1620px;
+float:right;
+background-image:url(images_100.jpg);
+}
+#body{
+background-color:#ccc;
+background-image:url(.jpg);
+height:1620px;
+marign-left:220px;
+}
+#footer{
+background-color:#111;
+width:100%px;
+height:120px;
+float:bottom;
+}
+td{
+color:#111;
+font-size:=10;}
+p{
+font-size:17;
+color:#fff;}
+h1{
+color:gray;}
+</style>
+</head>
+<body >
+<div id="conr">
+<div id="left">
+
+</div>
+<div id="right">
+
+</div>
+<div id="top">
+ <h1 align="center"><img src="8.jpg" width="300" height="140"><br>
+ WELL COME TO B5A.net CAR SHOPPING</h1>
+ </div>
+<div id="menutop">
+  <ul id="nav" class="drop">
+  <li><a href="home.html">HOME</a></li>
+  <li><a href="#">NEW CAR</a>
+    <ul>
+      <li><a href="newBus_1.html">RENTING</a></li>
+      <li><a href="car.html">SELLING</a></li>
+      </ul>
+  </li>
+  <li><a href="#"> USED CAR</a>
+    <ul>
+      <li><a href="rent.html">RENTING</a></li>
+      <li><a href="sell.html">SELLING</a></li>
+    </ul>
+  </li> 
+  <li> <a href="#">CONTACT US</a>
+	     <ul>
+         <li><a href="#">Facebook</a></li>
+         <li><a href="mailto:birhanu123e@gmail.com">email</a></li>
+         <li><a href="#">fax</a>
+		 <ul>
+		  <li><a href="#">+251911458101</a></li>
+		   <li><a href="#">+25191131758101</a></li>
+		    <li><a href="#">+251911317580</a></li>
+			 <li><a href="#">+251911758101</a></li>
+		 </ul>
+		 </li>
+         <li><a href="#">yahoo</a></li>
+		 <li><a href="#">phone</a>
+		 <ul>
+		 <li><a href="#">+251931758101</a></li>
+         <li><a href="#">+251931836205</a></li>
+         <li><a href="#">+251931792070</a></li>
+         <li><a href="#">+251913456363</a></li>
+		 </ul></li>
+         </ul>
+	</li>
+   <li><a href="bakg.html">BACKGROUND INFO</a></li>
+</ul>
+</div>
+<div id="col_l">
+</div>
+<div id="col_r">
+</div>
+<div id="body">
+<table border="0" vspace="0" cellspacing="0" cellpadding="0" >
+<tr><td><img src="images/b-414478-Funny_animated_car.gif" /></td></tr>
+<tr><td bgcolor="#000000" rowspan="2" align="center" width="400" height="500">
+<img src="images/AAA1.jpg">
+<ul class="svertical">
+<li><a href="http://www.dynamicdrive.com/">RENTAL</a></li>
+<li><a href="http://www.dynamicdrive.com/style/" >SELL</a></li>
+<li><a href="http://www.javascriptkit.com/jsref/">BUY</a></li>
+<li><a href="http://www.javascriptkit.com/domref/">ASSAMBLE</a></li>
+</ul><font color="#993399">
+2014 Citroen Technospace Concept
+Don't get carried away with the cool Technospace Concept, as it is merely an insight on what to expect from the upcoming C4 Picasso MUV - one of the best-selling models for the French Automaker.
+Slated to be shown off at the 2013 Geneva Motor Show, the Technospace Concept looks production ready. Given the new radical design language that Citroen currently follows (Check out the Citroen DS5 for instance), expect the 2014 Picasso to retain minimal changes from the concept design.
+If Citroen were to choose the above path, the 2014 Picasso will be 40 mm (1.57 inches) shorter in height than the outgoing model and 55 mm (2.16 inches) longer for extra cabin space. With these changes, the new Picasso will feature new proportions that delicately combine compactness and a large cabin space - a good aspect to impress customers looking for sheer practicality in a well-built package.
+for more information goto <a href="#">news</a></font>
+
+</td><td width="800"> <img width="500" height="400" src="images/images25.jpeg"> </td><td width="300"><img src="images/esdrtfgyhu.jpeg" height="600" width="300"</td></tr>
+<tr><td height="500" bgcolor="#000000"><font color="#996666"" size="+3">
+THE WORLD IS GETTING FASTER!!!!!!!!<BR>
+   YOU BETTER FAST TOO!!<br>
+   TO GET MORE FASTER WORK WITH US!!<br>
+   join us now
+<form>
+<a href="pro.html"><input type="button" align="absmiddle" name="home" value="HOME" ></a>
+</form>
+
+   </font>
+   
+</td><td width="300" bgcolor="#333333"><b><font color="#FF0000" size="+2" face="Georgia, Times New Roman, Times, serif" ><blink>LEAVE YOUR <BR>DREAM &<br> try it now</blink></font></b><img src="imagesmn.jpeg" height="400" width="300"></td></tr>
+<tr><td colspan="3"><marquee> <font color="#666666"> for more information contact as on our email www.adica_motors @yahoo.com</font></marquee></td></tr>
+</div>
+<div id="footer"><h1>
+<a href="home.html">HOME</a>
+<a href="formvalidation.html">REGSTER</a>
+<a href="adv.html">ADVERTISE</a> 
+<a href="about.html">ABOUT US</a>
+</h1>
+</h1>
+</div>
+</div>
+</body>
+</html>

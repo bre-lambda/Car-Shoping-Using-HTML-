@@ -1,0 +1,171 @@
+<html>
+<head>
+<title></title>
+<link href="styls/cssfil.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="styls/cf.css" media="screen" />
+	<script type="text/javascript" src="js/j.js"></script>	
+<style type="text/css">
+#conr{
+width:100%;
+height:700;
+background-color:silver;
+}
+#top{
+width:100%px;
+height:100;
+
+background-color:silver;
+}
+#menutop{
+background-color:#555;
+width:100%px;
+height:50px;
+}
+#col_l{
+background-color:#3F2AaF;
+width:200px;
+height:700px;
+float:left;
+background-image:url(images_100.jpg);
+}
+#col_r{
+background-color:#aac;
+width:100px;
+height:700px;
+float:right;
+background-image:url(images_100.jpg);
+}
+#body{
+background-color:silver;
+background-image:url(.jpg);
+height:700px;
+marign-left:220px;
+}
+#footer{
+background-color:#555;
+width:100%px;
+height:120px;
+float:bottom;
+}
+td{
+color:#111;
+font-size:=10;}
+</style>
+</head>
+<body >
+<div id="conr">
+<div id="top">
+ <font family="georgia" face="san-serif" size=10 color="grey">
+<h5 style="padding-left:160;word-spacing:5;"><I><strong> B5A.net CAR SHOPPING</strong></I></h5>
+  </font>
+ </div>
+<div id="menutop" style="background-color:#555">
+  <ul id="nav" class="drop">
+  <li><a href="home.html">HOME</a></li>
+  <li><a href="#">NEW CAR</a>
+    <ul>
+      <li><a href="newBus_1.html">RENTING</a></li>
+      <li><a href="car.html">SELLING</a></li>
+      </ul>
+  </li>
+  <li><a href="#"> USED CAR</a>
+    <ul>
+      <li><a href="rent.html">RENTING</a></li>
+      <li><a href="sell.html">SELLING</a></li>
+    </ul>
+  </li> 
+  <li> <a href="#">CONTACT US</a>
+	     <ul>
+         <li><a href="#">Facebook</a></li>
+         <li><a href="mailto:birhanu123e@gmail.com">email</a></li>
+         <li><a href="#">fax</a>
+		 <ul>
+		  <li><a href="#">+251911458101</a></li>
+		   <li><a href="#">+25191131758101</a></li>
+		    <li><a href="#">+251911317580</a></li>
+			 <li><a href="#">+251911758101</a></li>
+		 </ul>
+		 </li>
+         <li><a href="#">yahoo</a></li>
+		 <li><a href="#">phone</a>
+		 <ul>
+		 <li><a href="#">+251931758101</a></li>
+         <li><a href="#">+251931836205</a></li>
+         <li><a href="#">+251931792070</a></li>
+         <li><a href="#">+251913456363</a></li>
+		 </ul></li>
+         </ul>
+	</li>
+   <li><a href="bakg.html">BACKGROUND INFO</a></li>
+</ul>
+</div>
+
+<div id="body">
+	<form id="signup">
+		<h1 style="color:#111">Registere Here</h1>
+		<fieldset style="background-color:#888";>
+			<legend style="background-color:#fff;">Your details</legend>
+			
+			<ol>
+				<li>
+					<label for="fullname">Name *</label> 
+					<input type="text" id="fullname" name="fullname" placeholder="Full name" required />
+				</li>
+				<li>
+					<label for="email">Email *</label> 
+					<input type="email" id="email" name="email" placeholder="e.g. birhaas@gmail.com" title="Please enter a valid email" required />
+					<p class="validation01">
+						<span class="invalid">Please enter a valid email address 
+						</span>
+						<span class="valid">Thank you for entering a valid email</span>
+					</p>
+				</li>
+				<li>
+					<label for="tel">Phone *</label> 
+					<input type="tel" id="tel" name="tel" pattern="\d{10}" placeholder="Please enter a ten digit phone number" required />
+					<p class="validation01">
+						<span class="invalid">No spaces or character (may be /)</span>
+						<span class="valid">That's valid!</span>
+					</p>
+				</li>
+			</ol>
+		</fieldset>
+		
+		
+
+		<fieldset style="background-color:#888">
+			<legend style="background-color:#fff">Membership information</legend>
+			<ol>		
+				<li>
+					<label for="username">Username *</label>
+					<input id="username" name="username" type="text" pattern="\w{4,}" placeholder="Atleast 4 alphanumeric characters" required />
+				</li>
+				<li>
+					<label for="password">Password *</label>
+					<input id="password" name="password" type="password" title="Minimum 8 characters, one number, one uppercase and one lowercase letter" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*" required /> 
+					<p class="validation01">
+						<span class="invalid">Minimum 8 characters, one number, one uppercase letter and one lowercase letter</span>
+						<span class="valid">Your password meets our requirements, thank you.</span>
+					</p>
+				</li>
+				<li>
+					<label for="url">Website *</label> 
+					<input type="url" name="url" id="url" required />
+				</li>
+			</ol>
+		</fieldset>
+		
+		<input type="submit" value="Sign up" />
+
+	</form>
+	</div>
+<div id="footer" style="padding-left:150px">
+<ul id="nav" class="drop"><li><a href="home.html">HOME</a></li>
+<li><a href="formvalidation.html">REGSTER</a></li>
+<li><a href="serv.html">ADVERTISE</a> </li>
+<li><a href="about.html">ABOUT US</a></li></ul>
+</div>
+</div>
+	</div>
+</body>
+</html>

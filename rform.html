@@ -1,0 +1,63 @@
+<html>
+<head>
+<script type="text/javascript">
+
+
+function reg_format()
+{
+
+var name=prompt("Please enter your name","enter name");
+var email=prompt("Please enter your email","@gmail.com");
+var password=prompt("Please enter your password","12222");
+if (name!=null && name!="")
+  {document.write("<h2> you are sucessfully register!</h2>");
+  document.write("your name is: " + name + "");
+document.write("<br>");
+document.write("your password:" + password + "");
+document.write("<br>");
+document.write("your email is:" +email + "");
+}
+}
+function reg_format1()
+{
+
+var name=prompt("Please enter your name","enter name");
+var email=prompt("Please enter your email","@gmail.com");
+var password=prompt("Please enter your password","12222");
+var age=prompt("Please enter your age","");
+var sex=prompt("Please enter your sex","");
+var country=prompt("Please enter your country","");
+var education=prompt("Please enter your education level","");
+
+if (name!=null && name!="")
+  {document.write("<h2> you are sucessfully register!</h2>");
+  document.write("your name is: " + name + "");
+document.write("<br>");
+document.write("your password:" + password + "");
+document.write("<br>");
+document.write("your email is:" +email + "");
+document.write("<br>");
+document.write("your age is:" +age + "");
+document.write("<br>");
+document.write("your sex is:" +sex + "");
+document.write("<br>");
+document.write("your country is:" +country + "");
+document.write("<br>");
+document.write("your education level is:" +education + "");
+
+ }
+}
+
+</script>
+</head>
+<body>
+<h1>login</h1>
+
+
+<input type="button" onclick="reg_format()" value="reg_format box" />
+<h1>create an account</h1>
+<input type="button" onclick="reg_format1()" value="reg_format box" />
+
+
+</body>
+</html>
